@@ -116,6 +116,9 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         // Print full message.
         print(userInfo)
         
+        // Show push when app it's open
+        completionHandler(.alert)
+        
         // Change this to your preferred presentation option
         completionHandler([])
     }
